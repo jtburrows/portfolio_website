@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--CSS Styles -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <title>Joshua Burrows's Portfolio</title>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo"> JB </div>
+            <div>
+                <ui class="nav-links">
+                    <li><a href=#about>About</a></li>
+                    <li><a href=#experience>Experience</a></li>
+                    <li><a href=#projects>Projects and Publications</a></li>
+                    <li><a href=#contact>Contact</a></li>
+                </ui>
+            </div>
+        </nav>
+        <nav id="stack-nav">
+            <div class="logo"> JB </div>
+            <div class="stack-menu">
+                <div class="stack-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href=#about onclick="toggleMenu()">About</a></li>
+                    <li><a href=#experience onclick="toggleMenu()">Experience</a></li>
+                    <li><a href=#projects onclick="toggleMenu()">Projects and Publications</a></li>
+                    <li><a href=#contact onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="profile_pic_container">
+                <img src="assets/images/headshot.png" alt="Joshua's Headshot">
+            </div>
+            <div class="section-text">
+                <h1 class="Title">Joshua Burrows</h1>
+                <h1 class="Title">Bioengineering PhD Student</h1>
+                <div class="btn-container">
+                    <button class="btn" onclick="window.open('assets/JoshuaBurrowsResume.docx')">
+                        Download Resume
+                    </button>
+                    <button class="btn" onclick="location.href='#contact'">
+                        Contact Information
+                    </button>
+                </div>
+                <div class="external-container">
+                    <img src="assets/images/linkedin.png" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/joshua-burrows-494277250/'"
+                    />
+                    <img src="assets/images/github.png" class="icon"
+                    onclick="location.href='https://github.com/jtburrows'"
+                    />
+                </div>
+            </div>
+            
+        </section>
+    <script src="assets/js/menu_script.js"></script>
+    </body>
 </html>
